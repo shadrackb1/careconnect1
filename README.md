@@ -1,6 +1,9 @@
-<div align="center">
+﻿<div align="center">
 
-# 🩺 CareConnect
+# ðŸ©º CareConnect
+
+<img src="./assets/header.svg" width="100%" alt="header" />
+
 
 **Real-time care coordination for parents & caregivers**
 
@@ -23,7 +26,7 @@
 
 ---
 
-### 🚀 Live Demo & Source Code
+### ðŸš€ Live Demo & Source Code
 
 <p>
 <a href="https://zip-chi-rust.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-%F0%9F%8C%90-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo"></a>
@@ -36,7 +39,7 @@
 
 ## Overview
 
-CareConnect bridges the gap between parents and caregivers with a real-time platform for activity logging, location tracking, emergency alerts, and care coordination — all in a clean, mobile-first interface.
+CareConnect bridges the gap between parents and caregivers with a real-time platform for activity logging, location tracking, emergency alerts, and care coordination â€” all in a clean, mobile-first interface.
 
 ---
 
@@ -44,15 +47,15 @@ CareConnect bridges the gap between parents and caregivers with a real-time plat
 
 | Category | Capabilities |
 |----------|-------------|
-| **👤 Dual Role System** | Parent dashboard with daily summaries · Caregiver view for quick logging · Role-specific navigation |
-| **🔗 Family Linking** | Parent sets the child's name · Caregiver links via parent email + child name · Shared `link_key` for all records |
-| **📝 Activity Tracking** | Log meals, naps, diaper changes, medication & more · Real-time sync to parent view · Color-coded timeline |
-| **📍 Live Location** | GPS tracking with Leaflet maps · Share location with family · Watch live position updates |
-| **🚨 Emergency SOS** | One-tap alert · Auto-shares GPS location · Emergency type selection (Medical, Fire, Missing Child, Injury, Allergic Reaction, Choking) |
-| **📅 Smart Calendar** | Monthly calendar view · Appointment & medication reminders · Upcoming events list |
-| **🛡️ Safety Vault** | Emergency contacts · Medical info (blood type, allergies, conditions, medications) · Cloud-synced across devices · Quick access to SOS |
-| **🔐 Auth & Roles** | Supabase Auth · Email/password sign-in · Role selection on first launch |
-| **📱 Mobile-First** | Bottom navigation · PWA-ready · Touch-optimized UI · Smooth animations · Android via Capacitor |
+| **ðŸ‘¤ Dual Role System** | Parent dashboard with daily summaries Â· Caregiver view for quick logging Â· Role-specific navigation |
+| **ðŸ”— Family Linking** | Parent sets the child's name Â· Caregiver links via parent email + child name Â· Shared `link_key` for all records |
+| **ðŸ“ Activity Tracking** | Log meals, naps, diaper changes, medication & more Â· Real-time sync to parent view Â· Color-coded timeline |
+| **ðŸ“ Live Location** | GPS tracking with Leaflet maps Â· Share location with family Â· Watch live position updates |
+| **ðŸš¨ Emergency SOS** | One-tap alert Â· Auto-shares GPS location Â· Emergency type selection (Medical, Fire, Missing Child, Injury, Allergic Reaction, Choking) |
+| **ðŸ“… Smart Calendar** | Monthly calendar view Â· Appointment & medication reminders Â· Upcoming events list |
+| **ðŸ›¡ï¸ Safety Vault** | Emergency contacts Â· Medical info (blood type, allergies, conditions, medications) Â· Cloud-synced across devices Â· Quick access to SOS |
+| **ðŸ” Auth & Roles** | Supabase Auth Â· Email/password sign-in Â· Role selection on first launch |
+| **ðŸ“± Mobile-First** | Bottom navigation Â· PWA-ready Â· Touch-optimized UI Â· Smooth animations Â· Android via Capacitor |
 
 ---
 
@@ -93,11 +96,11 @@ npm install
 Create `.env.local` from `.env.example`:
 
 ```env
-# Supabase config — auth + data (project Settings > API)
+# Supabase config â€” auth + data (project Settings > API)
 VITE_SUPABASE_URL=
 VITE_SUPABASE_ANON_KEY=
 
-# Cloudinary config — for photo uploads
+# Cloudinary config â€” for photo uploads
 VITE_CLOUDINARY_CLOUD_NAME=
 VITE_CLOUDINARY_UPLOAD_PRESET=
 ```
@@ -120,48 +123,48 @@ npm run lint       # Lint with oxlint
 
 ```
 src/
-├── main.jsx                  # Entry point
-├── App.jsx                   # Routes & auth guards
-├── supabase.js               # Supabase client (URL + anon key)
-├── index.css                 # Global styles
-├── config/
-│   └── appVersion.js         # App version for update banner
-├── contexts/
-│   └── AuthContext.jsx       # Auth state, roles, linking, per-user sessions
-├── services/
-│   ├── supabaseService.js    # Families, members, activities, SOS, contacts, events, location, realtime
-│   ├── locationService.js    # Geolocation helpers
-│   ├── cloudinaryService.js  # Photo upload with local fallback
-│   ├── notificationService.js# Local notifications
-│   ├── logActivityLocal.js   # Offline activity logging
-│   └── demoLogger.js         # Demo data generation
-├── components/
-│   ├── BottomNav.jsx         # Mobile bottom nav
-│   ├── PageHeader.jsx        # Page header with back
-│   ├── ActivityChip.jsx      # Activity type chip
-│   ├── Toggle.jsx            # Toggle switch
-│   ├── EmergencyDashboard.jsx# SOS alert system
-│   ├── EmptyState.jsx        # Empty state placeholder
-│   ├── OfflineBanner.jsx     # Offline indicator
-│   ├── UpdateBanner.jsx      # New version prompt
-│   ├── WhatsNewSheet.jsx     # Changelog sheet
-│   └── ErrorBoundary.jsx     # Error boundary
-├── constants/
-│   └── activityData.js       # Activity types & colors
-├── utils/
-│   └── updateManager.js      # Version check + cache clearing
-└── pages/
-    ├── Login.jsx             # Sign in
-    ├── Register.jsx          # Create account
-    ├── RoleSelection.jsx     # Choose parent/caregiver
-    ├── LinkFamily.jsx        # Link family by email + child name
-    ├── ParentHome.jsx        # Parent dashboard
-    ├── CaregiverHome.jsx     # Caregiver dashboard
-    ├── LogActivity.jsx       # Log a care activity
-    ├── Calendar.jsx          # Schedule calendar
-    ├── TrackingMap.jsx       # Live GPS tracking
-    ├── SafetyVault.jsx       # Emergency contacts & info
-    └── Profile.jsx           # User profile & settings
+â”œâ”€â”€ main.jsx                  # Entry point
+â”œâ”€â”€ App.jsx                   # Routes & auth guards
+â”œâ”€â”€ supabase.js               # Supabase client (URL + anon key)
+â”œâ”€â”€ index.css                 # Global styles
+â”œâ”€â”€ config/
+â”‚   â””â”€â”€ appVersion.js         # App version for update banner
+â”œâ”€â”€ contexts/
+â”‚   â””â”€â”€ AuthContext.jsx       # Auth state, roles, linking, per-user sessions
+â”œâ”€â”€ services/
+â”‚   â”œâ”€â”€ supabaseService.js    # Families, members, activities, SOS, contacts, events, location, realtime
+â”‚   â”œâ”€â”€ locationService.js    # Geolocation helpers
+â”‚   â”œâ”€â”€ cloudinaryService.js  # Photo upload with local fallback
+â”‚   â”œâ”€â”€ notificationService.js# Local notifications
+â”‚   â”œâ”€â”€ logActivityLocal.js   # Offline activity logging
+â”‚   â””â”€â”€ demoLogger.js         # Demo data generation
+â”œâ”€â”€ components/
+â”‚   â”œâ”€â”€ BottomNav.jsx         # Mobile bottom nav
+â”‚   â”œâ”€â”€ PageHeader.jsx        # Page header with back
+â”‚   â”œâ”€â”€ ActivityChip.jsx      # Activity type chip
+â”‚   â”œâ”€â”€ Toggle.jsx            # Toggle switch
+â”‚   â”œâ”€â”€ EmergencyDashboard.jsx# SOS alert system
+â”‚   â”œâ”€â”€ EmptyState.jsx        # Empty state placeholder
+â”‚   â”œâ”€â”€ OfflineBanner.jsx     # Offline indicator
+â”‚   â”œâ”€â”€ UpdateBanner.jsx      # New version prompt
+â”‚   â”œâ”€â”€ WhatsNewSheet.jsx     # Changelog sheet
+â”‚   â””â”€â”€ ErrorBoundary.jsx     # Error boundary
+â”œâ”€â”€ constants/
+â”‚   â””â”€â”€ activityData.js       # Activity types & colors
+â”œâ”€â”€ utils/
+â”‚   â””â”€â”€ updateManager.js      # Version check + cache clearing
+â””â”€â”€ pages/
+    â”œâ”€â”€ Login.jsx             # Sign in
+    â”œâ”€â”€ Register.jsx          # Create account
+    â”œâ”€â”€ RoleSelection.jsx     # Choose parent/caregiver
+    â”œâ”€â”€ LinkFamily.jsx        # Link family by email + child name
+    â”œâ”€â”€ ParentHome.jsx        # Parent dashboard
+    â”œâ”€â”€ CaregiverHome.jsx     # Caregiver dashboard
+    â”œâ”€â”€ LogActivity.jsx       # Log a care activity
+    â”œâ”€â”€ Calendar.jsx          # Schedule calendar
+    â”œâ”€â”€ TrackingMap.jsx       # Live GPS tracking
+    â”œâ”€â”€ SafetyVault.jsx       # Emergency contacts & info
+    â””â”€â”€ Profile.jsx           # User profile & settings
 ```
 
 ---
@@ -201,7 +204,7 @@ src/
 
 ## License
 
-MIT © [Vee Omolo](https://github.com/Vee-OMOLO)
+MIT Â© [Vee Omolo](https://github.com/Vee-OMOLO)
 
 ---
 
@@ -213,6 +216,6 @@ MIT © [Vee Omolo](https://github.com/Vee-OMOLO)
 <a href="https://github.com/Vee-OMOLO/CareConnect2/issues"><img src="https://img.shields.io/github/issues/Vee-OMOLO/CareConnect2?style=flat-square&color=red" alt="GitHub Issues"></a>
 </p>
 
-**⭐ Star this repo if you find it useful!**
+**â­ Star this repo if you find it useful!**
 
 </div>
