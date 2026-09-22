@@ -1,25 +1,28 @@
 # CareConnect
 
-<img src="./assets/header.svg" width="100%" alt="CareConnect" />
+Real-time care coordination for parents and caregivers — activity logs, GPS check-ins, emergency alerts, and clean handoffs.
 
-Real-time care coordination for parents and caregivers. Activity logs, location, emergency alerts, handoff notes.
+## What it does
 
-## Features
-
-- Live activity feed (meals, meds, naps, incidents)
-- GPS check-ins and geofenced alerts
-- Emergency SOS broadcast to caregivers
-- Multi-caregiver handoff notes
-- Offline-tolerant cache with sync
+- Live activity feed for meals, meds, naps, and incidents
+- GPS check-ins on a map with geofenced alerts
+- Emergency SOS broadcast to linked caregivers
+- Multi-caregiver handoff notes so shifts stay continuous
+- Role-based accounts for parents and caregivers
+- Safety Vault for critical contacts and documents
+- Offline-tolerant cache that syncs when the network returns
 
 ## Stack
 
-React 19, TypeScript, Vite, Tailwind CSS, Supabase, Leaflet.
+React 19, TypeScript, Vite, Tailwind CSS, Supabase, Leaflet, Capacitor (Android camera, geolocation, notifications).
 
 ## Run locally
 
-    npm install
-    npm run dev
+```bash
+npm install
+cp .env.example .env.local   # fill Supabase + Cloudinary keys
+npm run dev
+```
 
 ## License
 
